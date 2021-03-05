@@ -1,0 +1,55 @@
+---
+title: "Exploratary Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(gridExtra)
+source("aggregate_table.R")
+source("summary information.R")
+source("Chart1.R")
+source("chart2.R")
+source("chart3.R")
+```
+The domain of interest that we are exploring with our chosen data set is how streaming services have changed to cater to trends and public demand over time. The data set we have examined in this exploratory analysis is titled “Netflix Titles”. It contains information on all of the movies and TV shows that are available on Netflix, and contains their release year, genre, when they were added, their directors, the countries they were created in, and the rating they received. We can use all of this information to see which audiences Netflix caters to most.
+
+The information in our summary information list includes the number of observations, the number of movies, the number of tv shows, the earliest release year, the number of kid friendly releases, the number of mature rated releases, the number of titles released before 1965, and the number of titles released after 2015.  All of these values allow for comparisons that help to demonstrate most clearly who Netflix has decided to gear their content most towards. For example, there are ten times more mature rated titles than kid friendly ones, and 125 time more new titles than old ones.
+
+
+## Summary Aggregate:
+
+```{r aggregate}
+aggregate_table
+```
+I included this table because this allows us to specifically identify movies that have the rating of "R" in comparison to other ratings
+Utilizing this, we can then compare the total R rated movies on netflix directly with number of tv shows rated R.
+Obviously, a great deal more movies are on netflix that are rated R than tv shows rated R.
+If we were to make another plot with a different rating, we could compare the amount of content on netflix by rating specifically:
+Is there more G rated or R rated content?
+This dataset and the resulting comparisons we can make can allow us to ask questions about netflix content's gearing based on the rating of their content.
+
+## Chart 1:
+```{r chart1}
+count_release_year_plot
+```
+
+This chart was included to show the change in the production of movies and tv shows throughout the years. We can see in the histogram that there was an exponential increase in the release of tv shows and movies in recent years. The number of shows released peaked in 2019 in this plot, however, this could be due to the lack of sufficient data for 2020 because the dataset only updated to January 18, 2020. Otherwise, we could expect 2020 to have a higher number of shows released. Moreover, we could see that there have always been more movies being released compared to tv shows.
+
+
+## Chart 2:
+```{r chart2}
+grid.arrange(plot_2015, plot_2019, ncol = 2)
+```
+
+This chart was included to show the change in netflix movie categories over time. In 2015, the most popular movie categories were Stand-up Comedy and Documentaries. In 2019, however, the most popular movie category has become International Movies. There are also the addition of 4 new categories: Anime Features, Classic Movies, Cult Movies, and Faith and Spirituality. The number of movies increased significantly for each categories, as shown by the y axis units, and the variety of categories also expanded throughout time.
+
+## Chart 3:
+```{r chart3}
+year_added_plot
+```
+
+This chart was included to show the number of netflix shows added throughout the years. From the graph, we can see that there is generally an increasing trend throughout the years, reaching a maximum in 2019. I would expect the trend to continue in the year 2020, but because the dataset only updates to January 18, 2020, there is a sufficient lack in data for 2020, causing a decrease. Otherwise, the number of netflix shows is definitely increasing as time passes, especially the recent years.

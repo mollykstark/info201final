@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 2.5em;
+  font-style: bold;
+  padding: 30px 30px 30px 30px;
+  margin-bottom: 30px;
+  background-color: rgb(169, 9, 9);
+  color: azure;
+  text-shadow: 5px 5px 5px rgb(38, 38, 38);
+}
+
+h3 {
+  color: rgb(232, 232, 232);;
+  font-size: 1.5em;
+  text-shadow: 5px 5px 5px rgb(24, 24, 24);
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+h5 {
+  color: rgb(69, 9, 9);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+article {
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(245, 239, 239);
+  padding: 10px;
+  margin: 30px 10px 60px;
+  background-color: rgb(169, 9, 9);
+}
+
+p {
+  color: white;
+  padding: 20px;
+}
+
+ol {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-style: oblique;
+  font-size: 1em;
+}
+
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}

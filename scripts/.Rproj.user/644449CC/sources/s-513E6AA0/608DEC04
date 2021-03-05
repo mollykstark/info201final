@@ -1,0 +1,32 @@
+{
+    "id": "608DEC04",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605284399241.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "netflix_by_type",
+        "caption": "netflix_by_type",
+        "totalObservations": "2",
+        "displayedObservations": "2",
+        "variables": "2",
+        "cacheKey": "1556027F",
+        "object": "netflix_by_type",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=netflix_by_type&cache_key=1556027F&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 0,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605284399241,
+    "read_only": false,
+    "read_only_alternatives": []
+}
